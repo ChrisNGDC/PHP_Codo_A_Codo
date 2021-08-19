@@ -6,19 +6,18 @@
     $dni = $_POST['dni'];
     $clave = $_POST['clave'];
 
-    // DNI => Clave
+    // DNI => [Usuario, Clave]
     $usuarios = [
-        '39321754' => 'clave123',
-        '00000000' => 'todocero',
+        '39321754' => ['ChrisG', 'clave123'],
+        '00000000' => ['Probando', 'todocero'],
     ];
 
-    // Validate DNI
+    // Validate
     function validateDNI() {
         global $dni, $numbers, $usuarios;
         if (isset($usuarios[$dni])) {
             for ($i=0; $i < strlen($dni); $i++) { 
                 if (!in_array($dni[$i], $numbers)) {
-                    echo $dni[$i];
                     return false;
                 }
             }
@@ -27,16 +26,26 @@
         return false;
     }
 
+    function validateClave() {
+        global $dni, $clave, $usuarios;
+        return $usuarios[$dni][1] === $clave;
+    }
+
+    function validateUsuario() {
+        global $dni, $usuario, $usuarios;
+        return $usuarios[$dni][0] === $usuario;
+    }
+
     // Data
-    if (validateDNI() && $usuarios[$dni] === $clave) {
+    if (!validateDNI()) {
+        echo 'DNI incorrecto'.'</br>';
+    } else if (!validateUsuario()) {
+        echo 'Usuario incorrecto'.'</br>';
+    } else if (!validateClave()) {
+        echo 'Clave incorrecta'.'</br>';
+    } else {
         echo 'Bienvenido '.$usuario.'</br>';
         echo 'Tu DNI es: '.$dni.'</br>';
         echo 'Tu clave es: '.$clave.'</br>';
-    } else {
-        if (!validateDNI()) {
-            echo 'DNI incorrecto'.'</br>';
-        } else {
-            echo 'Clave incorrecta'.'</br>';
-        }
     }
 ?>
