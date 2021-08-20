@@ -9,7 +9,7 @@
     // DNI => [Usuario, Clave]
     $usuarios = [
         '39321754' => ['ChrisG', 'clave123'],
-        '00000000' => ['Probando', 'todocero'],
+        '45712393' => ['Nicolas', '123clave'],
     ];
 
     // Validate
