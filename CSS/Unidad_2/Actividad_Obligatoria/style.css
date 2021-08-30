@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ body {
     background-color: red;
     width: 40vmin;
     height: 100%;
-    margin: 1vw 0 0 1vw;
+    margin: 1vmin 0 0 1vmin;
     color: yellow;
     font-size: 5vmin;
     vertical-align: top;
