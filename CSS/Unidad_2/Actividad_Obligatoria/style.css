@@ -4,17 +4,17 @@
 }
 
 body {
-    height: 300px;
+    height: 40vmin;
 }
 
 .number {
     display: inline-block;
     background-color: red;
-    width: 300px;
+    width: 40vmin;
     height: 100%;
-    margin: 30px 0 0 30px;
+    margin: 1vw 0 0 1vw;
     color: yellow;
-    font-size: 50px;
+    font-size: 5vmin;
     vertical-align: top;
 }
 
