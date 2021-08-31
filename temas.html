@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Temas</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+      #buttonsColor {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+    </style>
+
   </head>
   <body>
     <h2>Temas:</h2>
@@ -72,24 +84,18 @@
       </li>
     </ul>
 
-    <a href="http://localhost/PHP-CodoACodo/temas.php?color=black"><button>Night Mode</button></a>
-    <a href="http://localhost/PHP-CodoACodo/temas.php?color=white"><button>Light Mode</button></a>
+    <div id="buttonsColor">
+      <button onclick="fondoLetra('#000000', '#FFFFFF')">Night Mode</button>
+      <button onclick="fondoLetra('#FFFFFF', '#000000')">Light Mode</button>
+    </div>
+
+    <script>
+      function fondoLetra(fondo, letra) {
+        var html = document.getElementsByTagName("HTML")[0]
+        html.style.backgroundColor = fondo;
+        html.style.color = letra;
+      }
+    </script>
 
   </body>
 </html>
-
-<?php
-
-$color = "white";
-
-if (isset($_GET["color"])) {
-  $color = $_GET["color"];
-}
-
-if ($color == "black") {
- echo '<body style="background-color:black; color:white">';
-} else {
- echo '<body style="background-color:white; color:black">';
-}
-
-?>

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    font-size: 5vmin;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    align-items: center;
+    display: grid;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    height: 50vh;
+    width: 50vmin;
+}
+
+form h2 {
+    text-align: center;
+}
+form input {
+    width: 50%;
+}
+
+form div {
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+form div:last-child {
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+button {
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+/* Quitar steps a input tipo numero */
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

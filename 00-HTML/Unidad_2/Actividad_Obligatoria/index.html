@@ -5,45 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Login</title>
-    <style>
-        * {
-            margin: 0;
-        }
-        html {
-            height: 100%;
-            width: 100%;
-        }
-        body {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-        }
-        form {
-            align-items: center;
-            display: grid;
-        }
-        form h2 {
-            text-align: center;
-        }
-        form div {
-            text-align: right;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-        }
-        form div:last-child {
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
     <body>
-        <form action="" method="POST" target="_blank" autocomplete="off">
+        <form action="" method="POST" autocomplete="off">
             <h2>Acceso al Sistema</h2>
             <br>
             <div>
                 <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" pattern="[0-9]{8}" placeholder="45712393" title="DNI de 8 caracteres numericos" required>
+                <input type="number" id="dni" name="dni" pattern="[0-9]{8}" placeholder="45712393" title="DNI de 8 caracteres numericos"  required>
             </div>
             <br>
             <div>
