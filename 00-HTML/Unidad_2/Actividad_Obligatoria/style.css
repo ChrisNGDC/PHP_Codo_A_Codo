@@ -49,14 +49,3 @@ button:active {
     color: #FFFFFF;
     background-color: #000000;
 }
-
-/* Quitar steps a input tipo numero */
-
-input[type='number'] {
-    -moz-appearance:textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
