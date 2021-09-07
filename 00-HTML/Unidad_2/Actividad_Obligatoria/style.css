@@ -1,28 +1,42 @@
 * {
     margin: 0;
     font-size: 5vmin;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
     align-items: center;
     display: flex;
     justify-content: center;
+    background-image: url('./fondo-2.jpg');
+    background-size: cover;
 }
 
 form {
     align-items: center;
     display: grid;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
-    height: 50vh;
-    width: 50vmin;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    padding: 3vmin;
+    width: 65vmin;
+    border: 2vmin #ffffff solid;
+    box-shadow: 0 0 5vmin #000000;;
+    border-radius: 10vmin;
+    background-color: #ff9100;
+    justify-items: center;
+    color: #ffffff;
+    text-shadow: 0 0 2vmin #000000;
 }
 
 form h2 {
     text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 form input {
     width: 50%;
+    border: 0.1vmin #000000 solid;
+    border-radius: 1vmin;
 }
 
 form div {
@@ -30,6 +44,9 @@ form div {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    font-size: 1em;
+    font-weight: 600;
+    width: 80%;
 }
 
 form div:last-child {
@@ -39,6 +56,8 @@ form div:last-child {
 
 button {
     transition: transform .2s;
+    border: 0.4vmin #000000 solid;
+    border-radius: 1vmin;
 }
 
 button:hover {

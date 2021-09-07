@@ -4,18 +4,25 @@
     box-sizing: border-box;
 }
 
-.number {
-    display: inline-block;
-    background-color: #ff0000;
-    width: 40vmin;
-    height: 40vmin;
-    margin: 1vmin 0 0 1vmin;
-    color: #ffff00;
-    font-size: 5vmin;
-    vertical-align: top;
+.squares {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-#dos.number {
+.squares .square {
+    display: inline-block;
+    width: 40vmin;
+    max-width: 20vw;
+    height: 40vmin;
+    max-height: 20vw;
+    margin: 1vmin 0 0 1vmin;
+    font-size: 5vmin;
+    vertical-align: top;
+    color: #ffff00;
+    background-color: #ff0000;
+}
+
+#special{
     color: #ffffff;
     background-color: #000000;
 }
