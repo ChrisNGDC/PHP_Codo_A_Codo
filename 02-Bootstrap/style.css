@@ -93,7 +93,7 @@ h5 {
     margin-top: 1vmin;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 540px) {
     #cards {
         display: flex;
         flex-direction: column;
