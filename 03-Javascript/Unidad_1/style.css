@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 5vmin;
+}
+
+html {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.text-green {
+    color: #00a700!important;
+    padding-bottom: 0.3rem;
+}
+
+.text-green:hover {
+    color: #00a700;
+}
+
+.text-green:visited {
+    color: #00a700;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%!important;
+    align-items: center;
+}
+
+.fixed-top {
+    min-height: 10vmin;
+    --bs-gutter-x: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar, #banner {
+    padding: 0 4vw 0 4vw;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100%!important;
+    min-height: 10vmin;
+    color: white;
+}
+
+.navbar .nav-link {
+    transition: transform .2s;
+    padding: 0;
+    font-size: 0.4rem!important;
+}
+
+.navbar .nav-link:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    width: 15vmin;
+    height: auto;
+}
+
+#collapsibleNavId {
+    justify-content: flex-end;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: baseline;
+}
+
+.navbar-toggler-icon {
+    height: 8vmin;
+    width: 9vmin;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler {
+    display: flex;
+    width: 10vmin;
+    height: 9vmin;
+    padding: 0;
+    border: 0.1rem #FFFFFF solid;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#title, #navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: flex-end;
+    font-size: 0.7rem;
+}
+
+#title {
+    align-items: center;
+}
+
+#conf {
+    background-image: url('./images/hawaii.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vmin;
+}
+
+.lead {
+    font-size: 0.45rem!important;
+    color: white;
+    font-weight: 400;
+}
+
+.jumbotext {
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-weight: 500;
+}
+
+.trasparencia {
+    display: flex;
+    background-color: hsla(0, 0%, 0%, 0.397);
+}
+
+#conf .btn {
+    color: white;
+    font-size: 0.75em;
+    transition: transform .2s;
+    margin-right: 1vw;
+}
+
+#conf .btn:hover {
+    transform: scale(1.1);
+}
+
+#conf .btn:first-child:hover {
+    color: black;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p{
+    font-size: 0.4rem;
+    margin-bottom: 0;
+    margin-top: 1.5vmin;
+}
+
+.title h6{
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#conf, #orators, #placetime, #become-orator {
+    margin-top: 0;
+    padding-top: 10vmin;
+    width: 100%;
+    justify-content: center;
+}
+
+#cards {
+    display: flex;
+    width: 65%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1vmin;
+}
+
+#cards .card {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 32%;
+}
+
+.card-body {
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+}
+
+.card-title {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.6rem;
+}
+
+.card-text {
+    font-size: 0.4rem;
+}
+
+.card img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.skills span {
+    font-size: 0.3rem;
+    border-radius: 5px;
+    padding: 0.035rem 0.085rem;
+    font-weight: 700;
+    margin-right: 0.15rem;
+}
+
+.javascript {
+    color: #000000;
+    background-color: #f39e00;
+}
+
+.react {
+    color: #ffffff;
+    background-color: #00a2ff;
+}
+
+.negocios {
+    color: #ffffff;
+    background-color: #696969;
+}
+
+.startups {
+    color: #ffffff;
+    background-color: #ff1100;
+}
+
+.honolulu {
+    background-image: url('./images/honolulu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+#placetime {
+    border: #FFFFFF 0.1vmin solid;
+}
+
+#placetime img {
+    clip-path: fill-box;
+}
+
+#placetime h6 {
+    font-size: 0.75rem;
+}
+
+#placetime p {
+    font-size: 0.4rem;
+    margin-bottom: 0;
+}
+
+.know-more {
+    font-size: 0.4rem;
+    border-radius: 12.5px;
+    border: #ffffff 0.04rem solid;
+    color: #ffffff;
+    padding: 0.2rem;
+    transition: transform .2s;
+}
+
+.know-more:hover {
+    border: #000000 0.04rem solid;
+    color: #000000;
+    background-color: #ffffff!important;
+    transform: scale(1.1);
+}
+
+.know-more:focus, .lead .btn:focus, #orator-form input, #orator-form textarea, #orator-form .btn {
+    box-shadow: none;
+}
+
+#become-orator {
+    width: 60%;
+}
+
+#become-orator .title {
+    margin-bottom: 1vmin;
+}
+
+.title p span {
+    text-decoration: underline dotted;
+    font-size: 0.4rem;
+}
+
+#orator-form input, #orator-form textarea {
+    font-size: 2.5vmin!important;
+}
+
+#orator-form .row {
+    display: flex;
+    justify-content: center;
+}
+
+#orator-form form {
+    padding: 0;
+}
+
+#orator-form p {
+    font-size: 2vmin!important;
+    margin: 0;
+}
+
+#theme {
+    padding-bottom: 0;
+}
+
+#orator-form .btn {
+    width: 94%;
+    font-size: 2.5vmin!important;
+    background-color: #55c946;
+    transition: transform .2s;
+}
+
+#orator-form .btn:hover {
+    transform: scale(1.03);
+}
+
+#footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10vmin;
+    height: 10vmin;
+    width: 100%;
+    background: #060b1b;
+    background: linear-gradient(90deg, #060b1b 0%, #0e1c46 50%, #1c3a94 100%);
+    color: #FFFFFF;
+}
+
+#footer .nav {
+    padding: 0;
+    justify-content: center;
+}
+
+#footer .nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vmin;
+    width: 5vw;
+    margin: 0 2vmin;
+}
+
+#footer .nav .nav-link {
+    font-size: 0.4em;
+    transition: transform .2s;
+    padding: 0;
+}
+
+#footer .nav .nav-link:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    #cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    #cards .card {
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    #footer .nav {
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .jumbotext {
+        width: 100%;
+    }
+}
