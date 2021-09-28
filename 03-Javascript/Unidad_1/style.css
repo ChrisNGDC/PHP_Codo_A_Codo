@@ -403,4 +403,11 @@ body {
     .jumbotext {
         width: 100%;
     }
+
+    .honolulu {
+        background-image: url('./images/honolulu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+    }
 }
