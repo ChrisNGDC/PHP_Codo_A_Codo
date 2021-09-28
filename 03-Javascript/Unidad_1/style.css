@@ -393,6 +393,7 @@ body {
     #cards .card {
         align-items: flex-start;
         width: 90%;
+        margin-bottom: 2vmin;
     }
 
     #footer .nav {
