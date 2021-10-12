@@ -6,6 +6,7 @@ categoryDiscount = {
 
 const price = 200;
 const select = document.getElementById('category');
+const quantity = document.getElementById('quantity')
 
 function resetCards() {
     var cards = document.getElementById('cards-category');
@@ -24,7 +25,7 @@ function selectCategory(category) {
 function calculatePrice() {
     var category = select.options[select.selectedIndex].value;
     var discount = categoryDiscount[category];
-    var result = Math.ceil(price * (1 - discount / 100));
+    var result = Math.ceil(price * (1 - discount / 100) * quantity.value);
     var finalPrice = document.getElementById('finalPrice');
     finalPrice.innerText = result;
     selectCategory(category);
