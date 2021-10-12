@@ -41,7 +41,7 @@
                                 <a class="nav-link text-white" href="#become-orator">Conviertete en orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-green" href="#">Comprar tickets</a>
+                                <a class="nav-link text-green" href="#buy-tickets">Comprar tickets</a>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
                     <p class="lead">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer miembros del evento,  a otros estudiantes de Codo a Codo y a oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                     <p class="lead">
                         <a class="btn btn-outline-light btn-sm" href="#become-orator" role="button">Quiero ser orador</a>
-                        <a class="btn btn-success btn-sm" href="#" role="button">Comprar tickets</a>
+                        <a class="btn btn-success btn-sm" href="#buy-tickets" role="button">Comprar tickets</a>
                     </p>
                 </div>
             </div>
@@ -139,6 +139,77 @@
                 </form>
             </div>
         </div>
+        <div class="row" id="buy-tickets">
+            <div class="card-deck row" id="cards-category">
+                <div class="card card-category" id="student">
+                    <div class="card-body">
+                        <h6 class="card-title">Estudiante</h6>
+                        <p class="card-text">Tiene un descuento <br><br> <b>80%</b></p><br>
+                        <p class="form-text text-muted"> *presentar documentacion </p>
+                    </div>
+                </div>
+                <div class="card card-category" id="trainee">
+                    <div class="card-body">
+                        <h6 class="card-title">Trainee</h6>
+                        <p class="card-text">Tiene un descuento <br><br> <b>50%</b></p><br>
+                        <p class="form-text text-muted"> *presentar documentacion </p>
+                    </div>
+                </div>
+                <div class="card card-category" id="junior">
+                    <div class="card-body">
+                        <h6 class="card-title">Junior</h6>
+                        <p class="card-text">Tiene un descuento <br><br> <b>15%</b></p><br>
+                        <p class="form-text text-muted"> *presentar documentacion </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="title">
+                    <p>VENTA</p>
+                    <h6>VALOR DE TICKET $200</h6>
+                </div>
+            </div>
+            <form class="row" action="./index.html" autocomplete="off">
+                <div class="row">
+                    <div class="col-md-6 mb-1">
+                        <input type="text" name="name" id="name" class="form-control" required placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6 mb-1">
+                        <input type="text" name="last-name" id="last-name" class="form-control" required placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="email" name="mail" id="mail" class="form-control" required placeholder="Correo">    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-1">
+                        <label for="quantity">Cantidad</label>
+                        <input type="text" name="quantity" id="quantity" class="form-control" required pattern="[0-9]{1,}">
+                    </div>
+                    <div class="col-md-6 mb-1">
+                        <label for="category">Categoria</label>
+                        <select name="category" id="category" class="form-control" required placeholder="Estudiante">
+                            <option value="student">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="to-be-paid">
+                    <span>Total a pagar: $</span> <span id="finalPrice"> </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-1">
+                        <button type="reset" onclick="resetPrice()" class="btn btn-success">Borrar</button>
+                    </div>
+                    <div class="col-md-6 mb-1">
+                        <button type="button" onclick="calculatePrice()" class="btn btn-success">Resumen</button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <div class="row" id="footer">
             <footer>
                 <ul class="nav">
@@ -171,6 +242,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
