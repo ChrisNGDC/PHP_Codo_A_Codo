@@ -114,50 +114,7 @@ body {
     align-items: center;
 }
 
-#conf {
-    background-image: url('./images/hawaii.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    height: 100vmin;
-}
 
-.lead {
-    font-size: 0.45rem!important;
-    color: white;
-    font-weight: 400;
-}
-
-.jumbotext {
-    width: 38%;
-    margin-right: 0;
-    margin-left: auto;
-    text-align: right;
-    margin-top: auto;
-    margin-bottom: auto;
-    color: white;
-    font-weight: 500;
-}
-
-.trasparencia {
-    display: flex;
-    background-color: hsla(0, 0%, 0%, 0.397);
-}
-
-#conf .btn {
-    color: white;
-    font-size: 0.75em;
-    transition: transform .2s;
-    margin-right: 1vw;
-}
-
-#conf .btn:hover {
-    transform: scale(1.1);
-}
-
-#conf .btn:first-child:hover {
-    color: black;
-}
 
 .title {
     text-align: center;
@@ -175,32 +132,20 @@ body {
     margin-top: 0;
 }
 
-#conf, #orators, #placetime, #become-orator, #buy-tickets {
+#buy-tickets {
     margin-top: 0;
     padding-top: 10vmin;
     width: 100%;
     justify-content: center;
 }
 
-#become-orator {
-    padding-top: 5vmin;
-}
-
-#cards {
-    display: flex;
-    width: 65%;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 1vmin;
-}
-
-#cards .card, #cards-category .card {
+#cards-category .card {
     display: flex;
     align-items: flex-start;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
     padding: 0;
-    width: 32%;
+    width: 30%;
 }
 
 .card-body {
@@ -223,93 +168,12 @@ body {
     overflow: hidden;
 }
 
-.skills {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.skills span {
-    font-size: 0.3rem;
-    border-radius: 5px;
-    padding: 0.035rem 0.085rem;
-    font-weight: 700;
-    margin-right: 0.15rem;
-}
-
-.javascript {
-    color: #000000;
-    background-color: #f39e00;
-}
-
-.react {
-    color: #ffffff;
-    background-color: #00a2ff;
-}
-
-.negocios {
-    color: #ffffff;
-    background-color: #696969;
-}
-
-.startups {
-    color: #ffffff;
-    background-color: #ff1100;
-}
-
-.honolulu {
-    background-image: url('./images/honolulu.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 75vh;
-}
-
-#placetime {
-    border: #FFFFFF 0.1vmin solid;
-}
-
-#placetime img {
-    clip-path: fill-box;
-}
-
-#placetime h6 {
-    font-size: 0.75rem;
-}
-
-#placetime p {
-    font-size: 0.4rem;
-    margin-bottom: 0;
-}
-
-.know-more {
-    font-size: 0.4rem;
-    border-radius: 12.5px;
-    border: #ffffff 0.04rem solid;
-    color: #ffffff;
-    padding: 0.2rem;
-    transition: transform .2s;
-}
-
-.know-more:hover {
-    border: #000000 0.04rem solid;
-    color: #000000;
-    background-color: #ffffff!important;
-    transform: scale(1.1);
-}
-
-.know-more:focus, .lead .btn:focus, #orator-form input, #orator-form textarea, #orator-form .btn, #buy-tickets input, #buy-tickets .btn, #buy-tickets select {
+#buy-tickets input, #buy-tickets .btn, #buy-tickets select {
     box-shadow: none;
 }
 
-#become-orator {
-    width: 60%;
-}
-
 #buy-tickets {
-    width: 70%;
-}
-
-#become-orator .title {
-    margin-bottom: 1vmin;
+    width: 80%;
 }
 
 .title p span {
@@ -317,13 +181,9 @@ body {
     font-size: 0.4rem;
 }
 
-#orator-form input, #orator-form textarea {
-    font-size: 2.5vmin!important;
-}
-
 #buy-tickets #cards-category {
-    justify-content: space-between;
-    width: 88%;
+    justify-content: center;
+    width: 80%;
 }
 
 #buy-tickets .card {
@@ -355,12 +215,12 @@ body {
     border: 0.05rem #0040ff solid;
 }
 
-#orator-form .row, #buy-tickets .row{
+#buy-tickets .row{
     display: flex;
     justify-content: center;
 }
 
-#orator-form form, #buy-tickets form {
+#buy-tickets form {
     padding: 0;
 }
 
@@ -372,20 +232,9 @@ body {
     margin-top: 2vmin;
 }
 
-#orator-form p, #buy-tickets p{
+#buy-tickets p{
     font-size: 0.4rem!important;
     margin: 0;
-}
-
-#theme {
-    padding-bottom: 0;
-}
-
-#orator-form .btn{
-    width: 94%;
-    font-size: 2.5vmin!important;
-    background-color: #55c946;
-    transition: transform .2s;
 }
 
 #buy-tickets .btn {
@@ -399,7 +248,7 @@ body {
     padding: 0;
 }
 
-#orator-form .btn:hover, #buy-tickets .btn:hover{
+#buy-tickets .btn:hover{
     transform: scale(1.03);
 }
 
@@ -407,7 +256,7 @@ body {
     margin: 0.5rem 0;
     text-align: center;
     background-color: #00a2ff63;
-    width: 86.5%;
+    width: 88%;
 }
 
 #to-be-paid span {
@@ -453,32 +302,8 @@ body {
 }
 
 @media (max-width: 767px) {
-    #cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;    
-    }
-
-    #cards .card {
-        align-items: flex-start;
-        width: 90%;
-        margin-bottom: 2vmin;
-    }
-
     #footer .nav {
         padding: 0;
         justify-content: space-between;
-    }
-
-    .jumbotext {
-        width: 100%;
-    }
-
-    .honolulu {
-        background-image: url('./images/honolulu.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 50vh;
     }
 }
