@@ -78,7 +78,7 @@
                     <h6>VALOR DE TICKET $200</h6>
                 </div>
             </div>
-            <form class="row" action="./index.html" autocomplete="off">
+            <form class="row" action="javascript:void(0);" autocomplete="off" onsubmit="calculatePrice()">
                 <div class="row">
                     <div class="col-md-6 mb-1">
                         <input type="text" name="name" id="name" class="form-control" required pattern="[a-zA-Z]{1,}" placeholder="Nombre">
@@ -114,7 +114,7 @@
                         <button type="reset" onclick="resetPrice()" class="btn btn-success">Borrar</button>
                     </div>
                     <div class="col-md-6 mb-1">
-                        <button type="button" onclick="calculatePrice()" class="btn btn-success">Resumen</button>
+                        <button type="submit" class="btn btn-success">Resumen</button>
                     </div>
                 </div>
             </form>
